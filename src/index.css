@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #090909;
+  --color-bg-secondary: #111111;
+  --color-bg-card: #141414;
+  --color-bg-card-hover: #1a1a1a;
+
+  --color-purple-accent: #a855f7;
+  --color-purple-light: #c084fc;
+  --color-purple-dim: #7c3aed;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #52525b;
+
+  --color-border: #1f1f1f;
+  --color-border-purple: rgba(168, 85, 247, 0.3);
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --shadow-glow-purple: 0 0 20px rgba(168, 85, 247, 0.15);
+  --shadow-glow-purple-strong: 0 0 40px rgba(168, 85, 247, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #090909;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 2px;
+}
