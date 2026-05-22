@@ -23,7 +23,7 @@ const technologies = [
   // Frontend
   { icon: SiReact, name: 'React', category: 'Frontend' },
   { icon: SiJavascript, name: 'JavaScript', category: 'Frontend' },
-  { icon: SiTypescript, name: 'TypeScript', category: 'Frontend' },
+  { icon: SiTypescript, name: 'TypeScript (Básico)', category: 'Frontend' },
   { icon: SiHtml5, name: 'HTML5', category: 'Frontend' },
   { icon: TbBrandCss3, name: 'CSS3', category: 'Frontend' },
   { icon: SiTailwindcss, name: 'Tailwind', category: 'Frontend' },
@@ -46,7 +46,7 @@ const technologies = [
   { icon: SiGit, name: 'Git', category: 'Herramienta' },
   { icon: SiGithub, name: 'GitHub', category: 'Herramienta' },
   { icon: SiPostman, name: 'Postman', category: 'Herramienta' },
-  { icon: SiDocker, name: 'Docker', category: 'Herramienta' },
+  { icon: SiDocker, name: 'Docker (Básico)', category: 'Herramienta' },
   { icon: SiN8N, name: 'n8n', category: 'Automatización' },
   { icon: TbRobot, name: 'IA Automation', category: 'Automatización' },
 ]
