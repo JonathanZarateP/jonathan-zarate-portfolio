@@ -23,9 +23,9 @@
   --shadow-glow-purple-strong: 0 0 40px rgba(168, 85, 247, 0.25);
 }
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-6xl px-6 py-28"
+      className="py-28"
     >
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8">
 

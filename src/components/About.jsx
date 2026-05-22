@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="mx-auto max-w-6xl px-6 py-28"
+      className="py-28"
     >
       {/* Header */}
       <div className="mb-16 flex flex-col gap-3">
