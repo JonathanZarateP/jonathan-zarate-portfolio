@@ -90,7 +90,7 @@ const statusStyles = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-28">
+    <section id="projects" className="py-20">
       {/* Header */}
       <div className="mb-16 flex flex-col gap-3">
         <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">

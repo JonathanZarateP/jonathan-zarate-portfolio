@@ -5,7 +5,7 @@ import { HiOutlineLightningBolt } from 'react-icons/hi'
 
 const Hero = () => {
   return (
-    <section className="w-full pt-32 pb-24">
+    <section className="w-full pt-32 pb-16">
       <div className="flex w-full flex-col items-center gap-16 md:flex-row md:items-center md:justify-between">
 
         {/* Izquierda — Texto */}

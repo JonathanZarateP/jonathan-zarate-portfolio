@@ -55,7 +55,7 @@ const Technologies = () => {
   return (
     <section
       id="technologies"
-      className="py-28"
+      className="py-20"
     >
       {/* Header */}
       <div className="mb-16 flex flex-col items-center gap-3 text-center">

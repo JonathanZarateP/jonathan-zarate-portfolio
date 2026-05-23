@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="w-full min-h-screen bg-bg-primary">
       <Navbar />
-      <main className="w-full max-w-6xl mx-auto px-6">
+      <main className="w-full max-w-6xl mx-auto px-6 space-y-0">
         <Hero />
         <About />
         <Technologies />

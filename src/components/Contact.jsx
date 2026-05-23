@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-28"
+      className="py-20"
     >
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8">
 
