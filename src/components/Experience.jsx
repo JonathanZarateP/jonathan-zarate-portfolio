@@ -47,6 +47,9 @@ const Experience = () => {
     >
       {/* Header */}
       <div className="mb-16 flex flex-col items-center gap-3 text-center">
+        <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">
+          Trayectoria
+        </span>
         <h2 className="text-4xl font-black text-text-primary md:text-5xl">
           Experiencia
         </h2>
@@ -55,11 +58,9 @@ const Experience = () => {
         </p>
       </div>
 
-      {/* Timeline */}
       <div className="relative flex flex-col items-center">
 
-        {/* Línea vertical central */}
-        <div className="absolute top-0 bottom-0 left-1/2 w-px -translate-x-1/2 bg-border" />
+        <div className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-border-purple" />
 
         <div className="flex w-full flex-col gap-12">
           {experiences.map((exp) => (
@@ -71,7 +72,7 @@ const Experience = () => {
                   : 'flex-row'
               }`}
             >
-              {/* Card */}
+            
               <div className="w-5/12">
                 <div className="flex flex-col gap-3 rounded-2xl border border-border bg-bg-card p-6 transition-all duration-300 hover:border-border-purple hover:bg-bg-card-hover">
                   <div className="flex items-center justify-between gap-2">
@@ -90,12 +91,11 @@ const Experience = () => {
                 </div>
               </div>
 
-              {/* Icono central */}
+              
               <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border-purple bg-bg-card">
                 <exp.icon className="text-base text-purple-accent" />
               </div>
 
-              {/* Espacio lado opuesto */}
               <div className="w-5/12" />
             </div>
           ))}

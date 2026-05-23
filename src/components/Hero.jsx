@@ -8,7 +8,6 @@ const Hero = () => {
     <section className="w-full pt-32 pb-16">
       <div className="flex w-full flex-col items-center gap-16 md:flex-row md:items-center md:justify-between">
 
-        {/* Izquierda — Texto */}
         <div className="flex w-full flex-col gap-7 md:max-w-lg">
 
           {/* Badge */}
@@ -37,8 +36,6 @@ const Hero = () => {
             </span>{' '}
             Construyo aplicaciones full stack escalables usando tecnologías actuales.
           </p>
-
-          {/* CTAs */}
           <div className="flex flex-wrap items-center gap-3">
              <a
               href="#projects"

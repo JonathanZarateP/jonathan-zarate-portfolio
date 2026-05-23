@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="h-px w-full bg-border" />
+          <div className="h-px w-full bg-border-purple" />
 
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
             <p className="text-xs text-text-muted">

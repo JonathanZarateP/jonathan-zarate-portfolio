@@ -127,7 +127,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-card transition-all duration-200 hover:border-border-purple hover:bg-purple-accent/10"
+                 className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-4 py-2 text-sm font-medium text-text-secondary transition-all duration-200 hover:border-border-purple hover:bg-purple-accent/10 hover:text-text-primary"
               >
                 <Icon className="text-base text-text-secondary" />
               </a>
@@ -135,8 +135,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Lado derecho — Formulario */}
-        <div className="rounded-2xl border border-border bg-bg-card p-6 md:p-8">
+        <div className="rounded-2xl border border-border-purple bg-bg-card p-6 md:p-8">
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
             {/* Nombre y Email */}
@@ -209,8 +208,6 @@ const Contact = () => {
                 className="resize-none rounded-xl border border-border bg-bg-secondary px-4 py-3 text-sm text-text-primary placeholder-text-muted outline-none transition-all duration-200 focus:border-border-purple focus:bg-bg-card-hover"
               />
             </div>
-
-            {/* Botón enviar */}
             <button
               type="submit"
               className="w-full rounded-full bg-text-primary py-3 text-sm font-semibold text-bg-primary transition-all duration-200 hover:bg-purple-light"

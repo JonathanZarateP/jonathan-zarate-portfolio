@@ -67,7 +67,6 @@ const About = () => {
         ))}
       </div>
 
-      {/* Bottom card — Architect Perspective */}
       <div className="mt-4 flex flex-col gap-4 rounded-2xl border border-border bg-bg-card p-8 md:flex-row md:items-start md:gap-8">
         <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-border-purple bg-purple-accent/10">
           <TbCompass className="text-3xl text-purple-accent" />

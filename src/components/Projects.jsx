@@ -120,7 +120,6 @@ const Projects = () => {
                 </span>
               </div>
 
-              {/* Status badge */}
               <div className="absolute right-4 top-4">
                 <span
                   className={`rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-widest ${statusStyles[project.statusType]}`}
@@ -139,7 +138,6 @@ const Projects = () => {
                 {project.description}
               </p>
 
-              {/* Tech tags */}
               <div className="flex flex-wrap gap-2">
                 {project.techs.map(({ icon: Icon, name }) => (
                   <div
@@ -154,7 +152,6 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* Buttons */}
               <div className="mt-auto flex gap-3 pt-2">
                 {project.demoUrl ? (
                   <a
