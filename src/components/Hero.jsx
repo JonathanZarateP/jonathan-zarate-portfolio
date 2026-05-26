@@ -92,10 +92,12 @@ const Hero = () => {
             <div className="absolute inset-0 scale-110 rounded-2xl bg-purple-accent/10 blur-3xl" />
 
             <div className="group relative h-80 w-64 overflow-hidden rounded-2xl border border-border lg:h-96 lg:w-72">
-              <div className="flex h-full w-full items-center justify-center bg-bg-card">
-                <span className="text-sm text-text-muted">Tu foto aquí</span>
-              </div>
-              <div className="absolute inset-0 bg-bg-primary/20 transition-all duration-500 group-hover:bg-transparent" />
+              <img
+  src="/src/assets/profile.jpg"
+  alt="Jonathan Zarate Pablo"
+  className="h-full w-full object-cover object-top grayscale transition-all duration-700 group-hover:grayscale-0"
+/>
+<div className="absolute inset-0 bg-gradient-to-t from-bg-primary/60 via-transparent to-transparent transition-all duration-700 group-hover:from-transparent" />
             </div>
 
             {/* Badge Perfil */}
@@ -110,7 +112,7 @@ const Hero = () => {
             </div>
 
             {/* Badge Enfoque */}
-            <div className="absolute -right-4 bottom-10 flex items-center gap-2 rounded-xl border border-border bg-bg-card/90 px-3 py-2 backdrop-blur-sm">
+            <div className="absolute -right-2 bottom-10 flex items-center gap-2 rounded-xl border border-border bg-bg-card/90 px-3 py-2 backdrop-blur-sm">
               <div className="flex h-7 w-7 items-center justify-center rounded-lg border border-border-purple bg-purple-accent/20">
                 <HiOutlineLightningBolt className="text-sm text-purple-accent" />
               </div>
