@@ -18,6 +18,7 @@ import {
 } from 'react-icons/si'
 import { TbApi, TbShieldLock, TbRobot, TbDatabase, TbBrandCss3 } from 'react-icons/tb'
 import { FaJava } from 'react-icons/fa'
+import AnimatedSection from './AnimatedSection'
 
 const technologies = [
   // Frontend
@@ -58,7 +59,7 @@ const Technologies = () => {
       className="py-20"
     >
       {/* Header */}
-      <div className="mb-16 flex flex-col items-center gap-3 text-center">
+      <AnimatedSection className="mb-16 flex flex-col items-center gap-3 text-center">
         <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">
           Capacidades
         </span>
@@ -66,10 +67,10 @@ const Technologies = () => {
           Stack y herramientas
         </h2>
         <div className="h-px w-16 bg-purple-accent" />
-      </div>
+      </AnimatedSection>
 
       {/* Grid */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+      <AnimatedSection delay={0.15} className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
         {technologies.map(({ icon: Icon, name, category }) => (
           <div
             key={name}
@@ -91,7 +92,7 @@ const Technologies = () => {
             </div>
           </div>
         ))}
-      </div>
+      </AnimatedSection>
     </section>
   )
 }

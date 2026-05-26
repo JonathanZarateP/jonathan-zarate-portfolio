@@ -2,13 +2,14 @@ import { FiGithub, FiLinkedin, FiFileText } from 'react-icons/fi'
 import { BsWhatsapp } from 'react-icons/bs'
 import { TbStack2 } from 'react-icons/tb'
 import { HiOutlineLightningBolt } from 'react-icons/hi'
+import AnimatedSection from './AnimatedSection'
 
 const Hero = () => {
   return (
     <section className="w-full pt-32 pb-16">
       <div className="flex w-full flex-col items-center gap-16 md:flex-row md:items-center md:justify-between">
 
-        <div className="flex w-full flex-col gap-7 md:max-w-lg">
+        <AnimatedSection className="flex w-full flex-col gap-7 md:max-w-lg">
 
           {/* Badge */}
           <div className="flex w-fit items-center gap-2 rounded-full border border-border bg-bg-card px-4 py-2">
@@ -84,10 +85,10 @@ const Hero = () => {
               <FiFileText className="text-base text-text-secondary" />
             </a>
           </div>
-        </div>
+        </AnimatedSection>
 
         {/* Derecha — Foto */}
-        <div className="hidden md:flex md:shrink-0">
+        <AnimatedSection delay={0.2} className="hidden md:flex md:shrink-0">
           <div className="relative">
             <div className="absolute inset-0 scale-110 rounded-2xl bg-purple-accent/10 blur-3xl" />
 
@@ -122,7 +123,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
 
       </div>
     </section>

@@ -13,6 +13,7 @@ import {
   TbBrandGithub,
   TbSparkles,
 } from "react-icons/tb";
+import AnimatedSection from './AnimatedSection'
 
 const projects = [
   {
@@ -92,7 +93,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20">
       {/* Header */}
-      <div className="mb-16 flex flex-col gap-3">
+      <AnimatedSection className="mb-16 flex flex-col gap-3">
         <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">
           Portafolio
         </span>
@@ -103,10 +104,10 @@ const Projects = () => {
           Una selección de proyectos reales donde aplico soluciones full stack, 
           diseño responsive y tecnologías modernas.
         </p>
-      </div>
+      </AnimatedSection>
 
       {/* Proyectos reales */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <AnimatedSection delay={0.15} className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -180,10 +181,10 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
+      </AnimatedSection>
 
       {/* Placeholders futuros */}
-      <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
+      <AnimatedSection delay={0.25} className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
         {placeholders.map((item) => (
           <div
             key={item.id}
@@ -209,7 +210,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
+      </AnimatedSection>
     </section>
   );
 };

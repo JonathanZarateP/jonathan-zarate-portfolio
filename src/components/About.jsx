@@ -1,4 +1,5 @@
 import { TbCompass, TbCode, TbBrain } from 'react-icons/tb'
+import AnimatedSection from './AnimatedSection'
 
 const cards = [
   {
@@ -28,7 +29,7 @@ const About = () => {
       className="py-20"
     >
       {/* Header */}
-      <div className="mb-16 flex flex-col gap-3">
+      <AnimatedSection className="mb-16 flex flex-col gap-3">
         <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">
           Sobre mí
         </span>
@@ -40,10 +41,10 @@ const About = () => {
           Desarrollo de Software Multiplataforma. Me especializo en construir
           aplicaciones web modernas usando JavaScript, React, Node.js y Express.
         </p>
-      </div>
+      </AnimatedSection>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <AnimatedSection delay={0.15} className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {cards.map(({ icon: Icon, title, description }) => (
           <div
             key={title}
@@ -65,9 +66,9 @@ const About = () => {
             </div>
           </div>
         ))}
-      </div>
+      </AnimatedSection>
 
-      <div className="mt-4 flex flex-col gap-4 rounded-2xl border border-border bg-bg-card p-8 md:flex-row md:items-start md:gap-8">
+      <AnimatedSection delay={0.25} className="mt-4 flex flex-col gap-4 rounded-2xl border border-border bg-bg-card p-8 md:flex-row md:items-start md:gap-8">
         <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-border-purple bg-purple-accent/10">
           <TbCompass className="text-3xl text-purple-accent" />
         </div>
@@ -88,7 +89,7 @@ const About = () => {
             y la intención del usuario por encima de todo.
           </p>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   )
 }

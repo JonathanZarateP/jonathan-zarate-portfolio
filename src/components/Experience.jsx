@@ -1,4 +1,5 @@
 import { TbBriefcase, TbBook, TbDatabase } from 'react-icons/tb'
+import AnimatedSection from './AnimatedSection'
 
 const experiences = [
   {
@@ -46,7 +47,7 @@ const Experience = () => {
       className="py-20"
     >
       {/* Header */}
-      <div className="mb-16 flex flex-col items-center gap-3 text-center">
+      <AnimatedSection className="mb-16 flex flex-col items-center gap-3 text-center">
         <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">
           Trayectoria
         </span>
@@ -56,9 +57,9 @@ const Experience = () => {
         <p className="max-w-md text-base leading-relaxed text-text-secondary">
           El camino de mejora continua y entrega de soluciones reales.
         </p>
-      </div>
+       </AnimatedSection>
 
-      <div className="relative flex flex-col items-center">
+      <AnimatedSection delay={0.15}  className="relative flex flex-col items-center">
 
         <div className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-border-purple" />
 
@@ -100,7 +101,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   )
 }

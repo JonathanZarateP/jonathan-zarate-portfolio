@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { TbMail, TbMapPin, TbBrandGithub, TbBrandLinkedin } from 'react-icons/tb'
 import { BsWhatsapp } from 'react-icons/bs'
+import AnimatedSection from './AnimatedSection'
 
 const contactInfo = [
   {
@@ -69,7 +70,7 @@ const Contact = () => {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8">
 
         {/* Lado izquierdo — Info */}
-        <div className="flex flex-col gap-8">
+        <AnimatedSection className="flex flex-col gap-8">
           <div className="flex flex-col gap-3">
             <span className="text-xs font-medium uppercase tracking-widest text-purple-accent">
               Colaborar
@@ -133,9 +134,9 @@ const Contact = () => {
               </a>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
 
-        <div className="rounded-2xl border border-border-purple bg-bg-card p-6 md:p-8">
+        <AnimatedSection delay={0.2} className="rounded-2xl border border-border-purple bg-bg-card p-6 md:p-8">
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
             {/* Nombre y Email */}
@@ -216,7 +217,7 @@ const Contact = () => {
             </button>
 
           </form>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   )
