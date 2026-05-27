@@ -15,10 +15,24 @@ import {
 } from "react-icons/tb";
 import AnimatedSection from './AnimatedSection'
 import ProjectCarousel from './ProjectCarousel'
+import Proyecto1 from '../assets/projects/control-prospectos/Proyecto1.jpg'
+import Proyecto2 from '../assets/projects/control-prospectos/Proyecto2.jpg'
+import Proyecto3 from '../assets/projects/control-prospectos/Proyecto3.jpg'
+import Proyecto4 from '../assets/projects/control-prospectos/Proyecto4.jpg'
+import Proyecto5 from '../assets/projects/control-prospectos/Proyecto5.jpg'
+import Proyecto6 from '../assets/projects/control-prospectos/Proyecto6.jpg'
 
 const projects = [
   {
     id: 1,
+    images: [
+      Proyecto1,
+      Proyecto2,
+      Proyecto3,
+      Proyecto4,
+      Proyecto5,
+      Proyecto6,
+    ],
     status: "Completado",
     statusType: "completed",
     title: "Plataforma Educativa Web",
