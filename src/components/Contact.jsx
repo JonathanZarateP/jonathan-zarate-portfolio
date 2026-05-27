@@ -56,11 +56,29 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Aquí se conectará Formspree o EmailJS más adelante
-    console.log('Formulario enviado:', formData)
+  const [status, setStatus] = useState('idle')
+
+const handleSubmit = async (e) => {
+  e.preventDefault()
+  setStatus('sending')
+
+  try {
+    const response = await fetch('https://formspree.io/f/meedpvya', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    })
+
+    if (response.ok) {
+      setStatus('success')
+      setFormData({ name: '', email: '', area: '', message: '' })
+    } else {
+      setStatus('error')
+    }
+  } catch {
+    setStatus('error')
   }
+}
 
   return (
     <section
@@ -210,11 +228,24 @@ const Contact = () => {
               />
             </div>
             <button
-              type="submit"
-              className="w-full rounded-full bg-text-primary py-3 text-sm font-semibold text-bg-primary transition-all duration-200 hover:bg-purple-light"
-            >
-              Enviar mensaje
-            </button>
+  type="submit"
+  disabled={status === 'sending'}
+  className="w-full rounded-full bg-text-primary py-3 text-sm font-semibold text-bg-primary transition-all duration-200 hover:bg-purple-light disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
+</button>
+
+{status === 'success' && (
+  <p className="text-center text-sm font-medium text-purple-accent">
+    ¡Mensaje enviado correctamente! Te responderé pronto.
+  </p>
+)}
+
+{status === 'error' && (
+  <p className="text-center text-sm font-medium text-red-400">
+    Hubo un error al enviar. Intenta de nuevo.
+  </p>
+)}
 
           </form>
         </AnimatedSection>
