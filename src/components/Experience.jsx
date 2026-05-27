@@ -76,7 +76,7 @@ const Experience = () => {
             
               <div className="w-5/12">
                 <div className="flex flex-col gap-3 rounded-2xl border border-border bg-bg-card p-6 transition-all duration-300 hover:border-border-purple hover:bg-bg-card-hover">
-                  <div className="flex items-center justify-between gap-2">
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                     <h3 className="text-sm font-bold text-text-primary">
                       {exp.title}
                     </h3>

@@ -88,11 +88,11 @@ const Hero = () => {
         </AnimatedSection>
 
         {/* Derecha — Foto */}
-        <AnimatedSection delay={0.2} className="hidden md:flex md:shrink-0">
+        <AnimatedSection delay={0.2} className="flex w-full justify-center pt-4 md:w-auto md:justify-end md:pt-0">
           <div className="relative">
             <div className="absolute inset-0 scale-110 rounded-2xl bg-purple-accent/10 blur-3xl" />
 
-            <div className="group relative h-80 w-64 overflow-hidden rounded-2xl border border-border lg:h-96 lg:w-72">
+            <div className="group relative h-96 w-72 overflow-hidden rounded-2xl border border-border sm:h-[28rem] sm:w-80 lg:h-96 lg:w-72">
               <img
   src="/src/assets/profile.jpg"
   alt="Jonathan Zarate Pablo"
