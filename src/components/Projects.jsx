@@ -14,6 +14,7 @@ import {
   TbSparkles,
 } from "react-icons/tb";
 import AnimatedSection from './AnimatedSection'
+import ProjectCarousel from './ProjectCarousel'
 
 const projects = [
   {
@@ -114,21 +115,17 @@ const Projects = () => {
             className="group flex flex-col rounded-2xl border border-border bg-bg-card transition-all duration-300 hover:border-border-purple hover:bg-bg-card-hover overflow-hidden"
           >
             {/* Image placeholder */}
-            <div className="relative h-52 w-full bg-bg-secondary">
-              <div className="flex h-full w-full items-center justify-center">
-                <span className="text-sm text-text-muted">
-                  Screenshot próximamente
-                </span>
-              </div>
-
-              <div className="absolute right-4 top-4">
-                <span
-                  className={`rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-widest ${statusStyles[project.statusType]}`}
-                >
-                  {project.status}
-                </span>
-              </div>
-            </div>
+            {/* Carrusel */}
+<div className="relative">
+  <ProjectCarousel images={project.images} />
+  <div className="absolute right-4 top-4 z-10">
+    <span
+      className={`rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-widest ${statusStyles[project.statusType]}`}
+    >
+      {project.status}
+    </span>
+  </div>
+</div>
 
             {/* Content */}
             <div className="flex flex-1 flex-col gap-4 p-6">
